@@ -787,6 +787,7 @@ body {
 
 .modal-check {
   padding-left: 12px;
+  margin-top: 20px;
 }
 
 .user-check {
@@ -795,5 +796,19 @@ body {
 
 .checkbox-icon {
   position: absolute;
-  left: 54px;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  background-color: var(--accent-color);
+  fill: #ffffff;
+  border-color: transparent;
+}
+.checkbox-link {
 }
