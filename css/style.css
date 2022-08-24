@@ -93,13 +93,13 @@ body {
   position: relative;
 }
 
-.header-border-link:hover::after {
+.header-current::after {
   content: "";
   background-color: var(--accent-color);
   border-radius: 2px;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 4px;
   bottom: 0;
   left: 0;
 }
@@ -262,8 +262,6 @@ body {
 .work-box {
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 70px;
   bottom: 0;
@@ -356,7 +354,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) border-color 250ms;
+  transition: border-color 250ms var(--transition);
 }
 
 .clients-link:hover,
@@ -374,6 +372,7 @@ body {
 
 .clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms var(--transition);
 }
 
 /* ---------------FOOTER------------- */
@@ -636,6 +635,7 @@ body {
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .is-hidden {
@@ -711,6 +711,7 @@ body {
     background-color 250ms var(--transition), color 250ms var(--transition);
   margin: 0 auto;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .modal-button:hover,
