@@ -727,6 +727,15 @@ body {
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
+  transition: outline-color 250ms var(--accent-color);
+}
+
+.modal-input:focus {
+  outline-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-position:not(:first-child) {
@@ -804,14 +813,6 @@ body {
   margin-top: 20px;
 }
 
-.modal-input:focus {
-  outline-color: var(--accent-color);
-}
-
-.modal-input:focus + .input-icon {
-  fill: var(--accent-color);
-}
-
 .checkbox-icon {
   fill: currentColor;
 }
@@ -851,7 +852,6 @@ body {
 
 .modal-link {
   margin-left: 5px;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
